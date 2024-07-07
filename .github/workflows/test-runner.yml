@@ -15,6 +15,9 @@ jobs:
           sudo df -h
           sudo cat /proc/cpuinfo
           sudo cat /proc/meminfo
+          id
+          pwd
+          df -h .
       - name: Maximize build space
         uses: easimon/maximize-build-space@master
         with:
@@ -31,3 +34,15 @@ jobs:
           sudo df -h
           sudo cat /proc/cpuinfo
           sudo cat /proc/meminfo
+          id
+          pwd
+          df -h .
+      - name: inspect runner
+        run: | 
+          sudo mount
+          sudo df -h
+          sudo cat /proc/cpuinfo
+          sudo cat /proc/meminfo
+          id
+          pwd
+          df -h .
